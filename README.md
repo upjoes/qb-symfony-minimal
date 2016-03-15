@@ -14,7 +14,7 @@ SYMFONY__SECRET=ThisTokenIsNotSoSecretChangeIt
 SYMFONY__MONOLOG_ACTION_LEVEL=debug
 ```
 
-Symfony will grab any environment variable prefixed with SYMFONY__ and set it as a parameter in the service container. For details see [**How to Set external Parameters in the Service Container**][3] chapter of the Symfony Documentation.
+Symfony will grab any environment variable prefixed with `SYMFONY__` and set it as a parameter in the service container. For details see [**How to Set external Parameters in the Service Container**][3] chapter of the Symfony Documentation.
 
 What's inside?
 --------------
@@ -39,8 +39,16 @@ It comes pre-configured with the following bundles:
   * **DebugBundle** (in `dev` env) - Adds Debug and VarDumper component
     integration
 
+Credits
+-------
+
+[**Packing a Symfony full-stack Framework Application in one File**][6]
+[**Symfony All The Things (Web)**][7]
+
 [1]: https://github.com/vlucas/phpdotenv
 [2]: http://12factor.net
 [3]: https://symfony.com/doc/current/cookbook/configuration/external_parameters.html
 [4]: https://symfony.com/doc/3.0/book/templating.html
 [5]: https://symfony.com/doc/3.0/cookbook/logging/monolog.html
+[6]: http://fabien.potencier.org/packing-a-symfony-full-stack-framework-application-in-one-file-bootstrapping.html
+[7]: http://www.whitewashing.de/2014/10/26/symfony_all_the_things_web.html
