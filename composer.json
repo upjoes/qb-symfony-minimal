@@ -14,14 +14,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "composer dump-autoload --optimize",
-            "php bin/console cache:clear",
-            "php bin/console assets:install"
+            "composer dump-autoload --optimize"
         ],
         "post-update-cmd": [
-            "composer dump-autoload --optimize",
-            "php bin/console cache:clear",
-            "php bin/console assets:install"
+            "composer dump-autoload --optimize"
         ]
     }
 }
