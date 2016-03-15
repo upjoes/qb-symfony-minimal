@@ -2,9 +2,9 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+use Dotenv\Dotenv;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Debug\Debug;
-use Dotenv\Dotenv;
 
 $dotenv = new Dotenv(__DIR__.'/../');
 $dotenv->load();

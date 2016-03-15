@@ -5,10 +5,10 @@ set_time_limit(0);
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+use Dotenv\Dotenv;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Debug\Debug;
-use Dotenv\Dotenv;
 
 $dotenv = new Dotenv(__DIR__.'/../');
 $dotenv->load();
@@ -21,6 +21,6 @@ if ($debug) {
     Debug::enable();
 }
 
-$kernel = new AppKernel($env, $debug);
+$kernel      = new AppKernel($env, $debug);
 $application = new Application($kernel);
 $application->run($input);
