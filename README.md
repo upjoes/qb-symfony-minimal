@@ -33,10 +33,10 @@ It comes pre-configured with the following bundles:
 
   * [**MonologBundle**][5] - Adds support for Monolog, a logging library
 
-  * **WebProfilerBundle** (in `dev` env) - Adds profiling functionality and
+  * **WebProfilerBundle** (in `dev`/`test` env) - Adds profiling functionality and
     the web debug toolbar
 
-  * **DebugBundle** (in `dev` env) - Adds Debug and VarDumper component
+  * **DebugBundle** (in `dev`/`test` env) - Adds Debug and VarDumper component
     integration
 
 Credits
