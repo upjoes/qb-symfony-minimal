@@ -42,8 +42,8 @@ It comes pre-configured with the following bundles:
 Credits
 -------
 
-[**Packing a Symfony full-stack Framework Application in one File**][6]
-[**Symfony All The Things (Web)**][7]
+  * [**Packing a Symfony full-stack Framework Application in one File**][6]
+  * [**Symfony All The Things (Web)**][7]
 
 [1]: https://github.com/vlucas/phpdotenv
 [2]: http://12factor.net
