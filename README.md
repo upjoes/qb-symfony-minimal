@@ -14,7 +14,7 @@ SYMFONY__SECRET=ThisTokenIsNotSoSecretChangeIt
 SYMFONY__MONOLOG_ACTION_LEVEL=debug
 ```
 
-Symfony will grab any environment variable prefixed with `SYMFONY__` and set it as a parameter in the service container. For details see [**How to Set external Parameters in the Service Container**][3] chapter of the Symfony Documentation.
+> **Note**: Symfony will grab any environment variable prefixed with `SYMFONY__` and set it as a parameter in the service container. For details see [**How to Set external Parameters in the Service Container**][3] chapter of the Symfony Documentation.
 
 What's inside?
 --------------
@@ -39,10 +39,10 @@ It comes pre-configured with the following bundles:
   * **DebugBundle** (in `dev`/`test` env) - Adds Debug and VarDumper component
     integration
 
-Install
--------
+Installation
+------------
 
-Using [**Composer**][6]:
+Use [**Composer**][6] to create a new application:
 
 `composer create-project qb/symfony-minimal-edition path/to/install "v1.0.0"`
 
