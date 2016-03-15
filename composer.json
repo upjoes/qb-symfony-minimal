@@ -11,5 +11,17 @@
 	"symfony/symfony": "@stable",
         "symfony/monolog-bundle": "@stable",
         "vlucas/phpdotenv": "@stable"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "composer dump-autoload --optimize",
+            "php bin/console cache:clear",
+            "php bin/console assets:install"
+        ],
+        "post-update-cmd": [
+            "composer dump-autoload --optimize",
+            "php bin/console cache:clear",
+            "php bin/console assets:install"
+        ]
     }
 }

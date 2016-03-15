@@ -9,6 +9,7 @@
 /var/sessions/*
 !var/sessions/.gitkeep
 /vendor/
+/web/bundles/
 .env
 composer.lock
 /nbproject/private/
