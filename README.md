@@ -41,6 +41,6 @@ It comes pre-configured with the following bundles:
 
 [1]: https://github.com/vlucas/phpdotenv
 [2]: http://12factor.net
-[2]: https://symfony.com/doc/current/cookbook/configuration/external_parameters.html
+[3]: https://symfony.com/doc/current/cookbook/configuration/external_parameters.html
 [4]: https://symfony.com/doc/3.0/book/templating.html
 [5]: https://symfony.com/doc/3.0/cookbook/logging/monolog.html
