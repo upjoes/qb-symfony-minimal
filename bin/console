@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+require_once __DIR__.'/../vendor/autoload.php';
+
+use Symfony\Bundle\FrameworkBundle\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Debug\Debug;
+use Dotenv\Dotenv;
+
+$dotenv = new Dotenv(__DIR__.'/../');
+$dotenv->load();
+
+$input = new ArgvInput();
+$env   = $input->getParameterOption(['--env', '-e'], getenv('SYMFONY_ENV') ?: 'dev');
+$debug = ('0' !== getenv('SYMFONY_DEBUG')) && (!$input->hasParameterOption(['--no-debug', ''])) && ('prod' !== $env);
+
+if ($debug) {
+    Debug::enable();
+}
+
+$kernel = new AppKernel($env, $debug);
+$application = new Application($kernel);
+$application->run($input);

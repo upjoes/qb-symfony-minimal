@@ -1,0 +1,15 @@
+{
+    "name": "qb/symfony-minimal-edition",
+    "license": "MIT",
+    "type": "project",
+    "autoload": {
+        "psr-4": { "": "src/" },
+        "classmap": [ "app/AppKernel.php" ]
+    },
+    "require": {
+	"php": ">=5.5.9",
+	"symfony/symfony": "@stable",
+        "symfony/monolog-bundle": "@stable",
+        "vlucas/phpdotenv": "@stable"
+    }
+}
