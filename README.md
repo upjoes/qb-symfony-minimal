@@ -14,6 +14,8 @@ SYMFONY__SECRET=ThisTokenIsNotSoSecretChangeIt
 SYMFONY__MONOLOG_ACTION_LEVEL=debug
 ```
 
+Symfony will grab any environment variable prefixed with SYMFONY__ and set it as a parameter in the service container. For details see [**How to Set external Parameters in the Service Container**][3] chapter of the Symfony Documentation.
+
 What's inside?
 --------------
 
@@ -27,9 +29,9 @@ It comes pre-configured with the following bundles:
 
   * **FrameworkBundle** - The core Symfony framework bundle
 
-  * [**TwigBundle**][3] - Adds support for the Twig templating engine
+  * [**TwigBundle**][4] - Adds support for the Twig templating engine
 
-  * [**MonologBundle**][4] - Adds support for Monolog, a logging library
+  * [**MonologBundle**][5] - Adds support for Monolog, a logging library
 
   * **WebProfilerBundle** (in `dev` env) - Adds profiling functionality and
     the web debug toolbar
@@ -38,6 +40,7 @@ It comes pre-configured with the following bundles:
     integration
 
 [1]: https://github.com/vlucas/phpdotenv
-[2]: http://12factor.net/
-[3]: https://symfony.com/doc/3.0/book/templating.html
-[4]: https://symfony.com/doc/3.0/cookbook/logging/monolog.html
+[2]: http://12factor.net
+[2]: https://symfony.com/doc/current/cookbook/configuration/external_parameters.html
+[4]: https://symfony.com/doc/3.0/book/templating.html
+[5]: https://symfony.com/doc/3.0/cookbook/logging/monolog.html
