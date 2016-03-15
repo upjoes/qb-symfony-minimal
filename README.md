@@ -39,16 +39,24 @@ It comes pre-configured with the following bundles:
   * **DebugBundle** (in `dev`/`test` env) - Adds Debug and VarDumper component
     integration
 
+Install
+-------
+
+Using [**Composer**][6]:
+
+`composer create-project qb/symfony-minimal-edition path/to/install "v1.0.0"`
+
 Credits
 -------
 
-  * [**Packing a Symfony full-stack Framework Application in one File**][6]
-  * [**Symfony All The Things (Web)**][7]
+  * [**Packing a Symfony full-stack Framework Application in one File**][7]
+  * [**Symfony All The Things (Web)**][8]
 
 [1]: https://github.com/vlucas/phpdotenv
 [2]: http://12factor.net
 [3]: https://symfony.com/doc/current/cookbook/configuration/external_parameters.html
 [4]: https://symfony.com/doc/3.0/book/templating.html
 [5]: https://symfony.com/doc/3.0/cookbook/logging/monolog.html
-[6]: http://fabien.potencier.org/packing-a-symfony-full-stack-framework-application-in-one-file-bootstrapping.html
-[7]: http://www.whitewashing.de/2014/10/26/symfony_all_the_things_web.html
+[6]: https://getcomposer.org/
+[7]: http://fabien.potencier.org/packing-a-symfony-full-stack-framework-application-in-one-file-bootstrapping.html
+[8]: http://www.whitewashing.de/2014/10/26/symfony_all_the_things_web.html
