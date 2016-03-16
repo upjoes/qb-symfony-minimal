@@ -12,5 +12,3 @@
 /web/bundles/
 .env
 composer.lock
-/nbproject/private/
-/nbproject/
