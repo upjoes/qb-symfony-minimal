@@ -9,7 +9,7 @@ use Symfony\Component\Debug\Debug;
 $dotenv = new Dotenv(__DIR__.'/../');
 $dotenv->load();
 
-$env   = getenv('SYMFONY_ENV') ?: 'dev';
+$env   = getenv('SYMFONY_ENV') ?: 'prod';
 $debug = ('0' !== getenv('SYMFONY_DEBUG')) && ('prod' !== $env);
 
 if ($debug) {
