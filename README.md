@@ -44,7 +44,7 @@ Installation
 
 Use [**Composer**][6] to create a new application:
 
-`composer create-project qb/symfony-minimal-edition path/to/install "v1.0.0"`
+`composer create-project qb/symfony-minimal-edition path/to/install "v1.0.1"`
 
 Credits
 -------
