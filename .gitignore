@@ -10,5 +10,5 @@
 !var/sessions/.gitkeep
 /vendor/
 /web/bundles/
-.env
 composer.lock
+.idea
