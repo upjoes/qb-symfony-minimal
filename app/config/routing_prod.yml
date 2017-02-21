@@ -1,4 +1,4 @@
-hello_world:
-    path: /hello/{name}
+stores:
+    path: /stores/{name}
     defaults:
-        _controller: AppBundle:Default:hello
+        _controller: AppBundle:Stores:view

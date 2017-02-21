@@ -4,12 +4,12 @@ namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class DefaultController extends Controller
+class StoresController extends Controller
 {
-    public function helloAction($name)
+    public function viewAction($name)
     {
         return $this->render(
-            'default/hello.html.twig',
+            'stores/view.html.twig',
             ['name' => $name]
         );
     }
