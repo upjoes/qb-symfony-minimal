@@ -21,6 +21,12 @@
     <style>
     @import url("https://www.specsavers.co.uk/sites/all/modules/custom/store_search/store_search.css?okqlj8");@import url("https://www.specsavers.co.uk/sites/all/modules/custom/search_sli/css/search_sli.css?okqlj8");@import url("https://www.specsavers.co.uk/sites/all/modules/custom/ss_widgets/less/ss_widgets.css?okqlj8");
     </style>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" media="all" rel="stylesheet" type="text/css"><!--[if IE 9]>
 <style>
 @import url("https://www.specsavers.co.uk/sites/all/themes/specsavers_bootstrap/css/ie-9.css?okqlj8");
@@ -582,6 +588,7 @@
                                                                                         </div>
 																						<br />
 																						<div>You are 1.6 miles away from this store.</div>
+                                                                                        <div id="map"></div>
 																						<br />
 																						<div>
 																	                        <p><strong>Reviews</strong></p>
@@ -1422,6 +1429,22 @@
         </footer>
     </div>
     <script src="https://www.specsavers.co.uk/sites/all/themes/bootstrap/js/bootstrap.js?okqlj8">
+    </script>
+    <script>
+      function initMap() {
+        var uluru = {lat: 51.584523, lng: -0.023185};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2uYT8tu2taNB556RZ3iqg1LJ9q4jRHHk&callback=initMap">
     </script>
 </body>
 </html>
