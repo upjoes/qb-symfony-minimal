@@ -26,11 +26,11 @@ class StoresController extends Controller
 
 		for ($i = 1; $i <= $count; $i++) {
 				
-		    // echo '<li class="';
-		    // if(date("N") == $i){ echo " today"; }
-		    // echo '">';
+		    echo '<li class="';
+		    if(date("N") == $i){ echo " today"; }
+		    echo '">';
 
-		    // echo $openingHoursRaw[$i];
+		    echo $openingHoursRaw[$i];
 
 		    // echo '</li>';
 		}
@@ -41,7 +41,7 @@ class StoresController extends Controller
 		// opening hours friendly (the opening hours need to be parsed and returned in a friendly format)
 		// i expect the output of this variable to be "The Walthamstow store is open Monday to Friday 9 AM to 6 PM, Saturday 9 AM till 5:30 PM and Sunday 10 AM to 5 PM."
 		// do not hard code this! You must process the $openingHoursRaw variable to get this result!
-		$openingHoursFriendly = "The Walthamstow store is open " . $openingHoursRaw['1'] . " lipsum";
+		$openingHoursFriendly = "The Walthamstow store is open " . $openingHoursRaw['1'];
 		
 		// reviews
 		$reviews = array(

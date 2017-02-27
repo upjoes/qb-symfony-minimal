@@ -24,7 +24,7 @@
     <style>
       #map {
         height: 400px;
-        width: 100%;
+        width: 600px;
        }
     </style>
     <style>
@@ -1740,14 +1740,16 @@
     </script>
     <script>
       function initMap() {
-        var uluru = {lat: 51.584523, lng: -0.023185};
+        var myLatLng = {lat: 51.584523, lng: -0.023185};
+
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 18,
-          center: uluru
+          zoom: 15,
+          center: myLatLng
         });
+
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+          position: myLatLng,
+          map: map,
         });
       }
     </script>
@@ -1790,8 +1792,21 @@
         /* Close when someone clicks on the "x" symbol inside the overlay */
         function closeNav() {
         document.getElementById("myNav").style.width = "0%";
-
     }
+    </script>
+    <script>
+        var FF = (document.getBoxObjectFor != null || window.mozInnerScreenX != null);
+
+        if (FF) {
+            document.getElementById("page").style.display = 'none';
+        }
+    </script>
+    <script>
+        window.onkeyup = function (event) {
+            if (event.keyCode == 27 && document.getElementById('myNav').display='block') {
+                document.getElementById('myNav').display='none';
+            }
+        }
     </script>
 </body>
 </html>
