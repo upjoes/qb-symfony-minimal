@@ -81,11 +81,18 @@ class StoresController extends Controller
 				'body' => 'The service was pretty good. Quite impressed'
 			),
 		);
-		
+
+		foreach ($reviews as $key => $row) {
+		    $score[$key]  = $row['score'];
+		}
+
+		array_multisort($score, SORT_DESC, $reviews);
+
+
 		// reviews friendly (you need to sort the reviews and show the best reviews at the top as shown in the template)
 		// if there are multiple reviews with the same score then they should be sorted alphabetically by the reviewer name
 		// in the reviews above I expect to see Alice Doe's review higher up than Graham
-		$reviewsFriendly = array();
+		$reviewsFriendly = array_multisort($score, SORT_DESC, $reviews);
 		
         return $this->render(
             'stores/view.html.twig',
