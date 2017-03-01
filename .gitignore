@@ -10,5 +10,5 @@
 !var/sessions/.gitkeep
 /vendor/
 /web/bundles/
-composer.lock
 .idea
+.DS_Store
